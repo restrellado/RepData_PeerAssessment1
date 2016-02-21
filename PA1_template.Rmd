@@ -121,7 +121,7 @@ median(dft2$total) # median
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-Here are weekday and weekend time series panels comparing the average steps per interval. The highest average for weekdays is between 500 and 1000, while the highest average for weekends is much closer to 1000:
+Here are weekday and weekend time series panels comparing the average steps per interval. The highest average steps for weekdays occurs between the 500 and 1000 intervals, while the highest average steps for weekends is closer to the 1000 interval:
 
 ```{r wcomparison}
 merged$date <- as.Date(merged$date, format = "%Y-%m-%d")

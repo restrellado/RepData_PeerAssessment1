@@ -171,7 +171,7 @@ ggplot(dft2, aes(total)) +
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
-<p>Here are weekday and weekend time series panels comparing the average steps per interval. The highest average for weekdays is between 500 and 1000, while the highest average for weekends is much closer to 1000:</p>
+<p>Here are weekday and weekend time series panels comparing the average steps per interval. The highest average steps for weekdays occurs between the 500 and 1000 intervals, while the highest average steps for weekends is closer to the 1000 interval:</p>
 <pre class="r"><code>merged$date &lt;- as.Date(merged$date, format = &quot;%Y-%m-%d&quot;)
 merged &lt;- mutate(merged, day = weekdays(date, abbreviate = TRUE))
 wday &lt;- c(&quot;Mon&quot;, &quot;Tue&quot;, &quot;Wed&quot;, &quot;Thu&quot;, &quot;Fri&quot;)
